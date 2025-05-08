@@ -22,14 +22,13 @@ This project focuses on performing sentiment analysis on textual data using both
 
 ## Objective
 The objective of this project is to develop and compare three models for sentiment analysis:
-1. **LSTM-based model**: Traditional deep learning model using embedding layers and bidirectional LSTM for sentiment classification.
-2. **DistilBERT-based model**: Fine-tuning a pre-trained **DistilBERT** model for sentiment analysis.
-3. **BART-based model**: Fine-tuning a pre-trained **DistilBART** model for sentiment analysis.
+1. **Custom LSTM model**: Traditional deep learning model using embedding layers and bidirectional LSTM for sentiment classification.
+2. **DistilBERT model**: Fine-tuning a pre-trained **DistilBERT** model for sentiment analysis.
+3. **DistilBART-CNN-12-6**: Fine-tuning a pre-trained **DistilBART-CNN-12-6** model for sentiment analysis.
 
 ## Problem Statement
-Given a dataset of text (e.g., movie reviews or social media posts), the goal is to classify the sentiment of the text as:
+Given a dataset of text (social media posts), the goal is to classify the sentiment of the text as:
 - Positive
-- Neutral
 - Negative
 
 The challenge is to accurately capture the sentiment of text using deep learning models, including the potential of transformer models (such as BERT and its smaller variant DistilBERT) and traditional models like LSTM.
@@ -56,7 +55,7 @@ The project proceeds as follows:
 
 #### 3. **DistilBART Model**
 - **DistilBART** is a distilled version of BART, which is a sequence-to-sequence model trained to perform tasks like text generation, translation, and classification. We fine-tune **DistilBART** on sentiment analysis to classify the sentiment of text.
-    
+
     - Model used: [DistilBART CNN 12-6](https://huggingface.co/sshleifer/distilbart-cnn-12-6)
 
 ### Evaluation
