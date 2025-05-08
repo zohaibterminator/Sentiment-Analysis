@@ -1,11 +1,11 @@
 # Sentiment Analysis with LSTM, BERT, and BART
 
 ## Overview
-This project focuses on performing sentiment analysis on textual data using both traditional and transformer-based models. We experiment with different architectures, including an LSTM-based model, a DistilBERT-based model, and a BART-based model, to analyze text and classify the sentiment into predefined categories.
+This project focuses on performing sentiment analysis on textual data using both traditional and transformer-based models. We experiment with different architectures, including an LSTM model, DistilBERT model, and the DistilBART-CNN-12-6 model, to analyze text and classify the sentiment into predefined categories.
 
 ### Key Features:
-- **LSTM-based Model**: An LSTM network for sentiment classification based on an embedding layer and bidirectional LSTM.
-- **Transformer-based Models**: Fine-tuning a transformer model using **DistilBERT** and **BART** for sentiment analysis.
+- **LSTM Model**: An LSTM network for sentiment classification based on an embedding layer and bidirectional LSTM.
+- **Transformer-based Models**: Fine-tuning a transformer model using **DistilBERT** and **DistilBART-CNN-12-6** for sentiment analysis.
 - **Preprocessing**: Text preprocessing techniques including tokenization, cleaning, and padding for deep learning models.
 - **Model Evaluation**: Evaluation of the model performance on a test dataset and performance visualization.
 
@@ -31,7 +31,7 @@ Given a dataset of text (social media posts), the goal is to classify the sentim
 - Positive
 - Negative
 
-The challenge is to accurately capture the sentiment of text using deep learning models, including the potential of transformer models (such as BERT and its smaller variant DistilBERT) and traditional models like LSTM.
+The challenge is to accurately capture the sentiment of text using deep learning models, including the potential of transformer models (such as DistilBERT) and traditional models like LSTM.
 
 ## Methodology
 The project proceeds as follows:
@@ -44,19 +44,19 @@ The project proceeds as follows:
 
 ### Model Architectures
 
-#### 1. **LSTM-based Model**
+#### 1. **LSTM Model**
 - The model is built using an embedding layer for transforming text into dense vectors, followed by a bidirectional LSTM layer for capturing sequential dependencies.
 - The output layer uses a sigmoid activation function for binary classification.
 
 #### 2. **DistilBERT Model**
 - **DistilBERT** is a smaller version of the BERT model designed to be faster while retaining most of its performance. It is fine-tuned on the sentiment analysis task, using a classification head on top of the BERT encoder to predict sentiment labels.
 
-    - Model used: [DistilBERT Base Uncased](https://huggingface.co/distilbert/distilbert-base-uncased)
+    - Model link: [DistilBERT Base Uncased](https://huggingface.co/distilbert/distilbert-base-uncased)
 
-#### 3. **DistilBART Model**
-- **DistilBART** is a distilled version of BART, which is a sequence-to-sequence model trained to perform tasks like text generation, translation, and classification. We fine-tune **DistilBART** on sentiment analysis to classify the sentiment of text.
+#### 3. **DistilBART-CNN-12-6 Model**
+- **DistilBART-CNN-12-6** is a distilled version of BART, which is a sequence-to-sequence model trained to perform tasks like text generation, translation, and classification. We fine-tune **DistilBART-CNN-12-6** on sentiment analysis to classify the sentiment of text.
 
-    - Model used: [DistilBART CNN 12-6](https://huggingface.co/sshleifer/distilbart-cnn-12-6)
+    - Model link: [DistilBART CNN 12-6](https://huggingface.co/sshleifer/distilbart-cnn-12-6)
 
 ### Evaluation
 Models are evaluated using accuracy, loss, and other performance metrics, with results being recorded for each epoch.
