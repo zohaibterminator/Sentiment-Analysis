@@ -1,6 +1,4 @@
 # Sentiment Analysis with LSTM, BERT, and BART
-
-## Overview
 This project focuses on performing sentiment analysis on textual data using both traditional and transformer-based models. We experiment with different architectures, including an LSTM model, DistilBERT model, and the DistilBART-CNN-12-6 model, to analyze text and classify the sentiment into predefined categories.
 
 ### Key Features:
@@ -8,17 +6,6 @@ This project focuses on performing sentiment analysis on textual data using both
 - **Transformer-based Models**: Fine-tuning a transformer model using **DistilBERT** and **DistilBART-CNN-12-6** for sentiment analysis.
 - **Preprocessing**: Text preprocessing techniques including tokenization, cleaning, and padding for deep learning models.
 - **Model Evaluation**: Evaluation of the model performance on a test dataset and performance visualization.
-
-## Table of Contents
-- [Objective](#objective)
-- [Problem Statement](#problem-statement)
-- [Methodology](#methodology)
-- [Requirements](#requirements)
-- [Setup and Installation](#setup-and-installation)
-- [Usage](#usage)
-- [Model Architectures](#model-architectures)
-- [Results](#results)
-- [References](#references)
 
 ## Objective
 The objective of this project is to develop and compare three models for sentiment analysis:
